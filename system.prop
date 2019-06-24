@@ -99,3 +99,10 @@ ro.nfc.port=I2C
 persist.vendor.sys.fp.fod.location.X_Y=445,1910
 persist.vendor.sys.fp.fod.size.width_height=190,190
 ro.hardware.fp.fod=true
+
+# USB debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+
