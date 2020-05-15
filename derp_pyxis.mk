@@ -1,18 +1,21 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The UnDerp 2020
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Derp stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Inherit from pyxis device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Boot animation FHD:
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := pyxis
-PRODUCT_NAME := lineage_pyxis
+PRODUCT_NAME := derp_pyxis
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 

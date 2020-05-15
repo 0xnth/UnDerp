@@ -23,32 +23,32 @@
 
     <!-- Array containing custom messages shown during fingerprint acquisision from vendor.  Vendor is expected to add and translate these strings -->
     <string-array name="fingerprint_acquired_vendor">
-    <item>Попробуйте снова</item>
+    <item>Thử lại</item>
     <item></item>
     <item></item>
-    <item>Нажмите сильнее и отпустите после вибрации</item>
+    <item>Che hoàn toàn máy quét dấu vân tay và áp dụng áp lực</item>
     <item></item>
-    <item>Нажмите сильнее и отпустите после вибрации</item>
-    <item>Нажмите сильнее и отпустите после вибрации</item>
-    <item></item>
-    <item></item>
-    <item></item>
-    <item></item>
-    <item>Нажмите сильнее и отпустите после вибрации</item>
-    <item>Нажмите сильнее и отпустите после вибрации</item>
-    <item>"Слишком быстро! Невозможно распознать отпечаток"</item>
-    <item>Немного сдвиньте палец и повторите попытку</item>
-    <item>Поднимите палец и снова прислоните его к сканеру</item>
-    <item>Держите палец на сканере немного дольше</item>
+    <item>Che hoàn toàn máy quét dấu vân tay và áp dụng áp lực</item>
+    <item>Che hoàn toàn máy quét dấu vân tay và áp dụng áp lực</item>
     <item></item>
     <item></item>
     <item></item>
+    <item></item>
+    <item>Che hoàn toàn máy quét dấu vân tay và áp dụng áp lực</item>
+    <item>Che hoàn toàn máy quét dấu vân tay và áp dụng áp lực</item>
+    <item>"Quá nhanh! Không thể nhận ra dấu vân tay"</item>
+    <item>Di chuyển ngón tay của bạn một chút và thử lại</item>
+    <item>Nhấc ngón tay của bạn và đặt nó trở lại máy quét một lần nữa</item>
+    <item>Giữ ngón tay của bạn trên máy quét lâu hơn một chút</item>
     <item></item>
     <item></item>
     <item></item>
     <item></item>
     <item></item>
-    <item>Слегка сдвиньте палец</item>
-    <item>Отпечаток этого пальца уже был добавлен, добавьте другой палец</item>
+    <item></item>
+    <item></item>
+    <item></item>
+    <item>Di chuyển ngón tay của bạn một chút</item>
+    <item>Dấu vân tay này đã được thêm vào, sử dụng một ngón tay khác</item>
     </string-array>
 </resources>
