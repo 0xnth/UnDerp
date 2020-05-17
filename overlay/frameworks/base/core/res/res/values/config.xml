@@ -678,20 +678,6 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -58,0 L -58,74 L 58,74 L 58,0 Z</string>
-
-    <!-- Height of the status bar in portrait -->
-    <dimen name="status_bar_height_portrait">74px</dimen>
-
-    <!-- Height of the status bar in landscape -->
-    <dimen name="status_bar_height_landscape">24dp</dimen>
-
-    <!-- Radius of the software rounded corners at the top of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">96px</dimen>
-
-    <!-- Radius of the software rounded corners at the bottom of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">106px</dimen>
     
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
@@ -1181,14 +1167,6 @@
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
-
-    <!-- Whether device supports sensor based doze customizations -->
-    <bool name="config_dozePulsePickup">true</bool>
-    <bool name="config_dozePulseTilt">true</bool>
-    <bool name="config_dozePulseProximity">true</bool>
-
-    <!-- Whether to show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
 
     <!-- Shows the required view for in-display fingerprint --> 
     <bool name="config_supportsInDisplayFingerprint">true</bool>
