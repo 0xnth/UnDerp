@@ -8,6 +8,7 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/dimlayer_hbm_enabled
     chown system system /sys/class/touch/tp_dev/fod_status
     chmod 666 /sys/class/drm/card0-DSI-1/disp_count
+    chmod 0664 /sys/class/touch/tp_dev/fod_status
 
 on init
     chown system system /dev/input/event2
