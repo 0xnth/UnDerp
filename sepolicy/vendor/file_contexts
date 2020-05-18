@@ -6,6 +6,8 @@
 
 # DC Dimming
 /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable      u:object_r:sysfs_dm:s0
+/sys/class/drm/card0-DSI-1/disp_param                                u:object_r:sysfs_graphics:s0
+/sys/class/backlight/panel0-backlight/brightness                     u:object_r:sysfs_graphics:s0
 
 # Data files
 /data/vendor/fpc(/.*)?                        u:object_r:fingerprint_data_file:s0
