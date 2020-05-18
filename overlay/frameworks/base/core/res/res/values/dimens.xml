@@ -11,7 +11,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->    
-
+<resources>
     <!-- Height of the status bar in portrait -->
     <dimen name="status_bar_height_portrait">74px</dimen>
 
