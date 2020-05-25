@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017-2020 The LineageOS Project
+ *               2017-2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,11 +21,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.SystemProperties;
 import android.util.Log;
+import android.os.SystemProperties;
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.FileUtils;
 
@@ -34,24 +33,17 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
     private static final String DC_DIMMING_ENABLE_KEY = "dc_dimming_enable";
-    private static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable";
-    private static final String FOD_SCREENOFF_ENABLE_KEY = "fod_screenoff_enable";
-    private static final String FOD_SCRNOFFD_PROP = "persist.sys.gfscreenoffd.run";
+    private static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-
+	SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         if (DozeUtils.isDozeEnabled(context) && DozeUtils.sensorsEnabled(context)) {
             if (DEBUG) Log.d(TAG, "Starting Doze service");
             DozeUtils.startService(context);
         }
-        new DiracUtils(context).onBootCompleted();
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
-
-        boolean fodScreenOffState = sharedPrefs.getBoolean(FOD_SCREENOFF_ENABLE_KEY, false);
-        SystemProperties.set(FOD_SCRNOFFD_PROP, fodScreenOffState ? "1" : "0");
     }
 }

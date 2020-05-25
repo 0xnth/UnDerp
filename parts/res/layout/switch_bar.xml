@@ -22,17 +22,16 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:clickable="true"
-    android:gravity="center"
-    android:theme="@*android:style/ThemeOverlay.DeviceDefault.Accent">
+    android:gravity="center">
 
     <TextView android:id="@+id/switch_text"
-        android:layout_height="wrap_content"
         android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:paddingStart="56dp"
+        android:layout_weight="1"
         android:ellipsize="end"
         android:maxLines="2"
+        android:paddingStart="56dp"
         android:textAlignment="viewStart"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
         android:textColor="?android:attr/textColorPrimaryInverse"
