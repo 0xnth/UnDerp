@@ -1178,4 +1178,8 @@
     <bool name="config_hasVariableRefreshRate">true</bool>
     <integer name="config_defaultVariableRefreshRateSetting">0</integer>
 
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+         backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
 </resources>
