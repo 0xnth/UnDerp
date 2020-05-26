@@ -13,6 +13,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Boot animation FHD:
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Enable build with FaceUnlock
+TARGET_FACE_UNLOCK := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := pyxis
 PRODUCT_NAME := derp_pyxis
